@@ -1,0 +1,32 @@
+{
+  "name": "physics-test",
+  "version": "1.0.0",
+  "description": "Playing with JavaScript to create a physics test for no reason at all.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cherche/physics-test.git"
+  },
+  "author": "Ryan Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cherche/physics-test/issues"
+  },
+  "homepage": "https://github.com/cherche/physics-test#readme",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-babel-minify": "^0.2.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "webpack-stream": "^4.0.0"
+  }
+}
