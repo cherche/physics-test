@@ -1,4 +1,5 @@
 import Thing from './thing.js'
+import Follow from './follow.js'
 
 const doc = document
 const $body = doc.body
@@ -68,14 +69,6 @@ function main () {
 }
 main()
 
-function onMouseMove (e) {
-  ball.dis.set([e.pageX - 50, e.pageY - 50])
-}
-$ball.addEventListener('mousedown', () => {
-  $body.addEventListener('mousemove', onMouseMove)
-})
-$body.addEventListener('mouseup', () => {
-  $body.removeEventListener('mousemove', onMouseMove)
-})
+Follow.init(ball)
 
 window.ball = ball
