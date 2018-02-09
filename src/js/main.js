@@ -58,6 +58,8 @@ let then = Date.now()
 let now = Date.now()
 
 function main () {
+  window.requestAnimationFrame(main)
+
   now = Date.now()
   let delta = now - then
 
@@ -65,10 +67,9 @@ function main () {
   render()
 
   then = now
-  window.requestAnimationFrame(main)
 }
 main()
 
-Follow.init(ball)
+Follow.attach($body, ball)
 
 window.ball = ball
